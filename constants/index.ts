@@ -15,8 +15,4 @@ export const navLinks = [
     title: "Contact",
     src: "",
   },
-  {
-    title: "₱0.00",
-    src: "",
-  },
 ];
