@@ -1,3 +1,9 @@
+import { Hero } from "@/components";
+
 export default function Home() {
-  return <main></main>;
+  return (
+    <main className="relative w-full">
+      <Hero />
+    </main>
+  );
 }
