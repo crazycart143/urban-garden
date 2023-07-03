@@ -14,3 +14,13 @@ export interface CustomButtonProps {
   rightIcon?: string;
   isDisabled?: boolean;
 }
+export interface PlantProps {
+  id: number;
+  common_name: string;
+  scientific_name: string[];
+  other_name: string[];
+  cycle: string;
+  watering: string;
+  sunlight: string[];
+  default_image: object;
+}
