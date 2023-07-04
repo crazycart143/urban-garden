@@ -1,11 +1,8 @@
-import axios from "axios";
+import data from "../data/data.json";
 
 export async function fetchPlants() {
   try {
-    const response = await axios.get(
-      "https://perenual.com/api/species-list?page=1&key=sk-IuzV64a2806d5463b1453"
-    );
-    return response.data;
+    return data;
   } catch (error) {
     console.error(error);
     return null;

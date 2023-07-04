@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Bypass Secateur",
+      "ratings": 0,
+      "category": ["Plant accesories"],
+      "price": 45.9,
+      "image": "/plants-ecommerce-accessories-product-featured-img-3-400x600.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Bird of Paradise",
+      "ratings": 0,
+      "category": ["Ceramic pots"],
+      "price": 249.9,
+      "image": "/plants-ecommerce-product-featured-img-4-400x600.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Calathea Beauty Star",
+      "ratings": 0,
+      "category": ["Herb seeds"],
+      "price": 79.9,
+      "image": "/plants-ecommerce-product-featured-img-7-400x600.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Birdnest Japanese",
+      "ratings": 0,
+      "category": ["Air purifying"],
+      "price": 84.9,
+      "image": "/plants-ecommerce-product-featured-img-8-400x600.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Euphorbia Ingens",
+      "ratings": 0,
+      "category": ["Ceramic pots"],
+      "price": 106.9,
+      "image": "/plants-ecommerce-product-featured-img-10-400x600.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Alocasia Regal Shield",
+      "ratings": 0,
+      "category": ["Air purifying"],
+      "price": 204.9,
+      "image": "/plants-ecommerce-product-featured-img-17-400x600.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Calathea Rufibarba",
+      "ratings": 0,
+      "category": ["Herb seeds"],
+      "price": 109.9,
+      "image": "/plants-ecommerce-product-featured-img-18-400x600.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Aralia Ming",
+      "ratings": 0,
+      "category": ["Air purifying"],
+      "price": 284.9,
+      "image": "/plants-ecommerce-product-featured-img-19-400x600.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Dracaena Lisa",
+      "ratings": 0,
+      "category": ["Air purifying"],
+      "price": 114.9,
+      "image": "/plants-ecommerce-product-featured-img-20-400x600.jpg"
+    }
+  ]
+}
