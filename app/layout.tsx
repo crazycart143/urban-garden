@@ -1,8 +1,8 @@
 import { Footer, Navbar } from "@/components";
 import "./globals.css";
-import { Roboto_Slab } from "next/font/google";
+import { Unna } from "next/font/google";
 
-const roboto = Roboto_Slab({ weight: "400", subsets: ["latin"] });
+const roboto = Unna({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Urban Garden",
