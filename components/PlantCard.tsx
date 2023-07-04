@@ -7,6 +7,7 @@ interface PlantCardProps {
 
 const PlantCard = ({ plant }: PlantCardProps) => {
   const {
+    id,
     common_name,
     scientific_name,
     other_name,
@@ -15,7 +16,8 @@ const PlantCard = ({ plant }: PlantCardProps) => {
     sunlight,
     default_image,
   } = plant;
-  return <div>PlantCard</div>;
+
+  return <div className="flex w-full text-black">{common_name}</div>;
 };
 
 export default PlantCard;
