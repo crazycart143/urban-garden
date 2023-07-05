@@ -17,7 +17,7 @@ export default async function Home() {
     <main className="relative w-full">
       <Hero />
       {!isDataEmpty ? (
-        <section className="flex flex-wrap items-center justify-center py-20 px-14 lg:px-[140px] max-width gap-x-10 gap-y-10">
+        <section className="flex flex-wrap items-center justify-start md:justify-start xs:px-0 sm:px-6 sm:justify-start sm:gap-x-4 xs:justify-center py-20 px-6 md:px-10 lg:px-[140px] gap-x-10 gap-y-10">
           <div className="flex items-center justify-center w-full md:justify-start ">
             <h1 className="text-[40px] ">New Plants</h1>
           </div>

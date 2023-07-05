@@ -10,7 +10,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
   const { id, name, ratings, category, price, image } = plant;
 
   return (
-    <div className="flex w-[350px] text-black flex-col cursor-pointer">
+    <div className="flex w-[200px] md:w-[200px] lg:w-[350px] text-black flex-col cursor-pointer">
       <Image
         src={image}
         width={350}

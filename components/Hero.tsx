@@ -14,8 +14,8 @@ const Hero = () => {
         </h1>
         <CustomButton
           title="Shop Now"
-          containerStyles="bg-white  py-4 px-8 text-black"
-          textStyles="font-semibold"
+          containerStyles="bg-white xs:py-2 py-4 px-8 text-black"
+          textStyles="font-medium text-[18px]"
         />
       </div>
     </div>
