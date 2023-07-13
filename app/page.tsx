@@ -17,13 +17,15 @@ export default async function Home() {
     <main className="relative w-full">
       <Hero />
       {!isDataEmpty ? (
-        <section className="flex flex-wrap items-center justify-start md:justify-start xs:px-0 sm:px-6 sm:justify-start sm:gap-x-4 xs:justify-center py-20 px-6 md:px-10 lg:px-[140px] gap-x-10 gap-y-10">
-          <div className="flex items-center justify-center w-full md:justify-start ">
-            <h1 className="text-[40px] ">New Plants</h1>
+        <section className="flex flex-col items-start justify-start w-full px-6 pt-10 pb-20 lg:px-20">
+          <div className="flex items-center w-full sm:justify-start xs:justify-center ">
+            <h1 className="xs:text-[34px] sm:text-[40px]">New Plants</h1>
           </div>
-          {filteredPlants?.map((plant) => (
-            <PlantCard key={plant.id} plant={plant} />
-          ))}
+          <div className="flex flex-wrap items-center mt-10 justify-evenly gap-y-10 gap-x-2 sm:gap-x-4 md:gap-x-2">
+            {filteredPlants?.map((plant) => (
+              <PlantCard key={plant.id} plant={plant} />
+            ))}
+          </div>
         </section>
       ) : (
         <div>empty</div>

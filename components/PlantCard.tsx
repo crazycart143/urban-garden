@@ -10,18 +10,22 @@ const PlantCard = ({ plant }: PlantCardProps) => {
   const { id, name, ratings, category, price, image } = plant;
 
   return (
-    <div className="flex w-[200px] md:w-[200px] lg:w-[350px] text-black flex-col cursor-pointer">
+    <div className="flex flex-col text-black cursor-pointer">
       <Image
         src={image}
-        width={350}
-        height={550}
+        width={180}
+        height={350}
         alt={name}
-        className="object-contain"
+        className="object-contain w-[36vw] sm:w-[28vw] lg:w-[24vw]"
       />
       <h1>Stars</h1>
-      <h1 className="text-xl text-[#141A0F]">{name}</h1>
-      <p className="text-lg text-gray-400">{category}</p>
-      <p className="font-medium text-[20px] text-[#4D4F59] tracking-wider">
+      <h1 className="xs:text-[4vw] sm:text-[2vw] lg:text-[1.5vw] text-[#141A0F]">
+        {name}
+      </h1>
+      <p className="text-gray-400 xs:text-[4vw] sm:text-[2vw] lg:text-[1.5vw]">
+        {category}
+      </p>
+      <p className="font-medium xs:text-[4vw] text-[#4D4F59] tracking-wider sm:text-[2vw] lg:text-[1.5vw]">
         ₱{price}
       </p>
     </div>
