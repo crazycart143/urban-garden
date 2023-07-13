@@ -32,6 +32,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-bg": "url('/hero-img.webp')",
+        "gift-bg": "url('/footer-background-_1_.webp')",
       },
     },
   },

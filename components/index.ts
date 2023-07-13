@@ -7,6 +7,8 @@ import PlantCard from "./PlantCard";
 import Story from "./Story";
 import PlantList from "./PlantList";
 import Feedback from "./Feedback";
+import GiftCard from "./GiftCard";
+import Services from "./Services";
 
 export {
   Navbar,
@@ -18,4 +20,6 @@ export {
   Story,
   PlantList,
   Feedback,
+  GiftCard,
+  Services,
 };

@@ -8,7 +8,7 @@ interface PlantListProps {
 
 const PlantList = ({ filteredPlants }: PlantListProps) => {
   return (
-    <section className="flex flex-col items-start justify-start w-full px-6 pt-10 pb-20 lg:px-20 max-width">
+    <section className="flex flex-col items-start justify-start w-full px-6 pt-10 pb-10 sm:pb-20 lg:px-20 max-width">
       <div className="flex items-center w-full sm:justify-start xs:justify-center ">
         <h1 className="xs:text-[34px] sm:text-[40px]">New Plants</h1>
       </div>

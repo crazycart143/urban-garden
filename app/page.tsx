@@ -1,4 +1,11 @@
-import { Feedback, Hero, PlantList, Story } from "@/components";
+import {
+  Feedback,
+  GiftCard,
+  Hero,
+  PlantList,
+  Services,
+  Story,
+} from "@/components";
 import { PlantProps } from "@/types";
 import { fetchPlants } from "@/utils";
 
@@ -30,6 +37,12 @@ export default async function Home() {
       </section>
       <section>
         <Feedback />
+      </section>
+      <section>
+        <GiftCard />
+      </section>
+      <section>
+        <Services />
       </section>
     </main>
   );
