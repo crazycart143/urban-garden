@@ -29,12 +29,8 @@ const PlantCard = ({ plant }: PlantCardProps) => {
       <p className="font-medium xs:text-[4vw] text-[#4D4F59] tracking-wider sm:text-[2vw] lg:text-[22px]">
         ₱{price}
       </p>
-      <div className="absolute items-center justify-center hidden w-10 h-10 bg-white rounded-full top-4 right-4 group-hover:flex">
-        <BsFillBagFill
-          className="duration-500 ease-in-out opacity-0 group-hover:opacity-100"
-          size={20}
-          color="gray"
-        />
+      <div className="absolute flex items-center justify-center w-10 h-10 transition duration-200 ease-in-out bg-white rounded-full opacity-0 group-hover:opacity-100 top-4 right-4 ">
+        <BsFillBagFill size={20} color="gray" />
       </div>
     </div>
   );
