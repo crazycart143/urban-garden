@@ -4,7 +4,7 @@ import { LuPackage2 } from "react-icons/lu";
 import { FaHandHoldingHeart } from "react-icons/fa";
 const Services = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-10 py-10 sm:flex-row gap-x-6 ">
+    <div className="flex flex-col items-center justify-center px-10 pb-10 sm:flex-row gap-x-6 ">
       <div className="flex flex-col items-center justify-start lg:flex-row ">
         <div className="rounded-full bg-[#5C9735] w-10 lg:w-[40px] h-10 flex justify-center items-center sm:text-[24px] ">
           <AiFillLock color="white" />
