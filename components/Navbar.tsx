@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-10 bg-transparent">
+    <nav className="absolute top-0 left-0 right-0 z-10 bg-transparent max-width">
       <div className="grid w-full h-[50px] grid-cols-3 lg:grid-cols-2 px-6 md:px-10 py-6 text-white">
         <div className="lg:hidden">
           <HamburgerMenu setIsOpen={setIsOpen} isOpen={isOpen} />
