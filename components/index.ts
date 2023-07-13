@@ -6,6 +6,7 @@ import CustomButton from "./CustomButton";
 import PlantCard from "./PlantCard";
 import Story from "./Story";
 import PlantList from "./PlantList";
+import Feedback from "./Feedback";
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   PlantCard,
   Story,
   PlantList,
+  Feedback,
 };
