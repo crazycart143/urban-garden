@@ -15,7 +15,7 @@ export default async function page() {
         <span className="flex justify-start items-start text-gray-500 text-sm">
           Home / Shop
         </span>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mt-10">
           <p>Showing 1 - 9 of 25 results</p>
         </div>
         <div className="flex mt-10 ">

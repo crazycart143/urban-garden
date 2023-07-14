@@ -13,7 +13,11 @@ const PlantCard = ({ plant }: PlantCardProps) => {
   const { id, name, ratings, category, price, image } = plant;
   const pathname = usePathname();
   return (
-    <div className="relative flex flex-col text-black cursor-pointer group">
+    <div
+      className={`${
+        pathname === "/shop" ? "w-[24vw]" : ""
+      } relative flex flex-col cursor-pointer group`}
+    >
       <Image
         src={image}
         width={180}
@@ -21,26 +25,26 @@ const PlantCard = ({ plant }: PlantCardProps) => {
         alt={name}
         className={`${
           pathname === "/shop"
-            ? "w-[26vw]"
+            ? "xs:w-[24vw]"
             : "w-[36vw] sm:w-[28vw] lg:w-[24vw] xl:w-[340px]"
-        } object-contain `}
+        } object-contain  `}
       />
       <h1>Stars</h1>
       <h1
         className={`${
           pathname === "/shop"
-            ? "text-[2vw]"
+            ? "xs:text-[2vw] sm:text-[4vw]"
             : " xs:text-[4vw] sm:text-[2vw] lg:text-[26px] "
-        }text-[#141A0F]`}
+        }text-[#141A0F] break-words `}
       >
         {name}
       </h1>
       <p
         className={`${
           pathname === "/shop"
-            ? "text-[2.5vw] text-gray-400"
+            ? "xs:text-[2.2vw] sm:text-[2vw]"
             : "xs:text-[4vw] sm:text-[2vw] lg:text-[20px]"
-        }text-gray-400`}
+        } text-gray-400`}
       >
         {category}
       </p>

@@ -14,7 +14,7 @@ const PlantList = ({ filteredPlants }: PlantListProps) => {
   return (
     <section
       className={`${
-        pathname === "/shop" ? "" : "px-6 pt-10 pb-10 sm:pb-20 lg:px-20"
+        pathname === "/shop" ? "pt-0" : "px-6 pt-10 pb-10 sm:pb-20 lg:px-20"
       } flex flex-col items-start justify-start w-full max-width`}
     >
       <div
