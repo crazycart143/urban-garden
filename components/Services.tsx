@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillLock } from "react-icons/ai";
 import { LuPackage2 } from "react-icons/lu";
 import { FaHandHoldingHeart } from "react-icons/fa";
+
 const Services = () => {
   return (
     <div className="flex flex-col items-center justify-center px-10 pb-10 sm:flex-row gap-x-6 ">
