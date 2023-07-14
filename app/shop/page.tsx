@@ -18,7 +18,7 @@ export default async function page() {
         <div className="flex justify-between items-center">
           <p>Showing 1 - 9 of 25 results</p>
         </div>
-        <div className="flex mt-10">
+        <div className="flex mt-10 ">
           <PlantList filteredPlants={filteredPlants} />
         </div>
       </div>

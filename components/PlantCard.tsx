@@ -1,15 +1,17 @@
+"use client";
+
 import React from "react";
 import { PlantProps } from "@/types";
 import Image from "next/image";
 import { BsFillBagFill } from "react-icons/bs";
-
+import { usePathname } from "next/navigation";
 interface PlantCardProps {
   plant: PlantProps;
 }
 
 const PlantCard = ({ plant }: PlantCardProps) => {
   const { id, name, ratings, category, price, image } = plant;
-
+  const pathname = usePathname();
   return (
     <div className="relative flex flex-col text-black cursor-pointer group">
       <Image
@@ -17,16 +19,38 @@ const PlantCard = ({ plant }: PlantCardProps) => {
         width={180}
         height={350}
         alt={name}
-        className="object-contain w-[36vw] sm:w-[28vw] lg:w-[24vw] xl:w-[340px]"
+        className={`${
+          pathname === "/shop"
+            ? "w-[26vw]"
+            : "w-[36vw] sm:w-[28vw] lg:w-[24vw] xl:w-[340px]"
+        } object-contain `}
       />
       <h1>Stars</h1>
-      <h1 className="xs:text-[4vw] sm:text-[2vw] lg:text-[26px] text-[#141A0F]">
+      <h1
+        className={`${
+          pathname === "/shop"
+            ? "text-[2vw]"
+            : " xs:text-[4vw] sm:text-[2vw] lg:text-[26px] "
+        }text-[#141A0F]`}
+      >
         {name}
       </h1>
-      <p className="text-gray-400 xs:text-[4vw] sm:text-[2vw] lg:text-[20px]">
+      <p
+        className={`${
+          pathname === "/shop"
+            ? "text-[2.5vw] text-gray-400"
+            : "xs:text-[4vw] sm:text-[2vw] lg:text-[20px]"
+        }text-gray-400`}
+      >
         {category}
       </p>
-      <p className="font-medium xs:text-[4vw] text-[#4D4F59] tracking-wider sm:text-[2vw] lg:text-[22px]">
+      <p
+        className={`${
+          pathname === "/shop"
+            ? "text-[2.5vw]"
+            : "xs:text-[4vw] sm:text-[2vw] lg:text-[22px]"
+        } font-medium  text-[#4D4F59] tracking-wider `}
+      >
         ₱{price}
       </p>
       <div className="absolute flex items-center justify-center w-10 h-10 transition duration-200 ease-in-out bg-white rounded-full opacity-0 group-hover:opacity-100 top-4 right-4 ">

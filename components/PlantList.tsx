@@ -12,7 +12,11 @@ interface PlantListProps {
 const PlantList = ({ filteredPlants }: PlantListProps) => {
   const pathname = usePathname();
   return (
-    <section className="flex flex-col items-start justify-start w-full px-6 pt-10 pb-10 sm:pb-20 lg:px-20 max-width">
+    <section
+      className={`${
+        pathname === "/shop" ? "" : "px-6 pt-10 pb-10 sm:pb-20 lg:px-20"
+      } flex flex-col items-start justify-start w-full max-width`}
+    >
       <div
         className={`${
           pathname === "/shop" ? "hidden" : "flex"
