@@ -15,7 +15,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
   return (
     <div
       className={`${
-        pathname === "/shop" ? "w-[24vw]" : ""
+        pathname === "/shop" ? "w-[24vw] sm:w-[26.5vw] md:w-[26vw]" : ""
       } relative flex flex-col cursor-pointer group`}
     >
       <Image
@@ -25,7 +25,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
         alt={name}
         className={`${
           pathname === "/shop"
-            ? "xs:w-[24vw] lg:w-[20vw]"
+            ? "w-[24vw] sm:w-[26.5vw] md:w-[26vw] lg:w-[20vw]"
             : "w-[36vw] sm:w-[28vw] lg:w-[24vw] xl:w-[340px]"
         } object-contain  `}
       />
@@ -60,11 +60,14 @@ const PlantCard = ({ plant }: PlantCardProps) => {
       <div
         className={`${
           pathname === "/shop"
-            ? "w-4 h-4 top-2 right-2 sm:w-6 sm:h-6"
+            ? "w-4 h-4 top-2 right-2 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
             : "w-10 h-10 top-4 right-4"
         } absolute flex items-center justify-center transition duration-200 ease-in-out bg-white rounded-full opacity-0 group-hover:opacity-100 `}
       >
-        <BsFillBagFill color="gray" className="text-[8px] sm:text-[12px]" />
+        <BsFillBagFill
+          color="gray"
+          className="text-[8px] sm:text-[12px] md:text-[16px] lg:text-[18px]"
+        />
       </div>
     </div>
   );

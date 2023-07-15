@@ -9,7 +9,7 @@ export default function HamburgerMenu({
 }: HamburgerMenuProps) {
   const pathname = usePathname();
   const genericHamburgerLine = `${
-    pathname === "/shop" ? "bg-black" : "bg-white"
+    pathname === "/shop" ? "bg-[#5C9735]" : "bg-white"
   } h-1 w-6 my-[2px] rounded-full transition ease transform duration-300`;
 
   return (

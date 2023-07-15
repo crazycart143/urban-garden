@@ -10,17 +10,17 @@ export default async function page() {
   const filteredPlants = allPlantsObject?.slice(0, 9) ?? [];
 
   return (
-    <section className="bg-gray-100 w-full h-full flex justify-center items-center py-6 px-4 lg:px-[140px]  max-width">
-      <div className="bg-white w-full h-full px-6 lg:px-[40px] py-4">
-        <span className="flex justify-start items-start text-gray-500 text-sm sm:text-base">
-          Home / Shop
-        </span>
-        <div className="flex justify-between items-center mt-4 text-sm text-gray-600 sm:text-base">
-          <p>Showing 1 - 9 of 25 results</p>
+    <section className="bg-gray-100 w-full h-full flex py-6 px-4 lg:px-[100px] lg:py-14 max-width">
+      <div className="bg-white w-full h-full py-4 md:py-12">
+        <div className="flex flex-col  px-8 md:px-12 w-full">
+          <span className="flex justify-start items-start text-gray-500 text-sm sm:text-base">
+            Home / Shop
+          </span>
+          <div className="flex justify-between items-center mt-4 text-sm text-gray-600 sm:text-base">
+            <p>Showing 1 - 9 of 25 results</p>
+          </div>
         </div>
-        <div className="flex ">
-          <PlantList filteredPlants={filteredPlants} />
-        </div>
+        <PlantList filteredPlants={filteredPlants} />
       </div>
     </section>
   );

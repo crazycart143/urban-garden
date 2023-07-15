@@ -32,14 +32,7 @@
       "price": 84.9,
       "image": "/plants-ecommerce-product-featured-img-8-400x600.jpg"
     },
-    {
-      "id": 5,
-      "name": "Euphorbia Ingens",
-      "ratings": 0,
-      "category": ["Ceramic pots"],
-      "price": 106.9,
-      "image": "/plants-ecommerce-product-featured-img-10-400x600.jpg"
-    },
+
     {
       "id": 6,
       "name": "Alocasia Regal Shield",

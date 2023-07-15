@@ -15,7 +15,7 @@ const PlantList = ({ filteredPlants }: PlantListProps) => {
     <section
       className={`${
         pathname === "/shop" ? "pt-0" : "px-6 pt-10 pb-10 sm:pb-20 lg:px-20"
-      } flex flex-col items-start justify-start w-full max-width`}
+      } flex flex-col w-full max-width `}
     >
       <div
         className={`${
@@ -24,7 +24,7 @@ const PlantList = ({ filteredPlants }: PlantListProps) => {
       >
         <h1 className="xs:text-[34px] sm:text-[40px]">New Plants</h1>
       </div>
-      <div className="flex flex-wrap items-start mt-10 justify-start gap-y-10 gap-x-4 sm:gap-x-10">
+      <div className="grid grid-cols-3 mt-10  gap-y-10 gap-x-4 mx-auto">
         {filteredPlants?.map((plant) => (
           <PlantCard key={plant.id} plant={plant} />
         ))}
