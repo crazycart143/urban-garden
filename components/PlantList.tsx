@@ -24,7 +24,7 @@ const PlantList = ({ filteredPlants }: PlantListProps) => {
       >
         <h1 className="xs:text-[34px] sm:text-[40px]">New Plants</h1>
       </div>
-      <div className="flex flex-wrap items-center mt-10 justify-evenly gap-y-10 gap-x-2 sm:gap-x-4 md:gap-x-2">
+      <div className="flex flex-wrap items-start mt-10 justify-start gap-y-10 gap-x-4 sm:gap-x-10">
         {filteredPlants?.map((plant) => (
           <PlantCard key={plant.id} plant={plant} />
         ))}

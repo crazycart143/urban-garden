@@ -25,7 +25,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
         alt={name}
         className={`${
           pathname === "/shop"
-            ? "xs:w-[24vw]"
+            ? "xs:w-[24vw] lg:w-[20vw]"
             : "w-[36vw] sm:w-[28vw] lg:w-[24vw] xl:w-[340px]"
         } object-contain  `}
       />
@@ -33,8 +33,8 @@ const PlantCard = ({ plant }: PlantCardProps) => {
       <h1
         className={`${
           pathname === "/shop"
-            ? "xs:text-[2vw] sm:text-[4vw]"
-            : " xs:text-[4vw] sm:text-[2vw] lg:text-[26px] "
+            ? "text-[2vw] sm:text-[2.5vw] lg:text-[2vw] "
+            : "xs:text-[4vw] sm:text-[2vw] lg:text-[26px] "
         }text-[#141A0F] break-words `}
       >
         {name}
@@ -42,7 +42,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
       <p
         className={`${
           pathname === "/shop"
-            ? "xs:text-[2.2vw] sm:text-[2vw]"
+            ? "xs:text-[2.2vw] sm:text-[2vw] lg:text-[1.5vw]"
             : "xs:text-[4vw] sm:text-[2vw] lg:text-[20px]"
         } text-gray-400`}
       >
@@ -51,14 +51,20 @@ const PlantCard = ({ plant }: PlantCardProps) => {
       <p
         className={`${
           pathname === "/shop"
-            ? "text-[2.5vw]"
+            ? "text-[2.5vw] lg:text-[2vw]"
             : "xs:text-[4vw] sm:text-[2vw] lg:text-[22px]"
         } font-medium  text-[#4D4F59] tracking-wider `}
       >
         ₱{price}
       </p>
-      <div className="absolute flex items-center justify-center w-10 h-10 transition duration-200 ease-in-out bg-white rounded-full opacity-0 group-hover:opacity-100 top-4 right-4 ">
-        <BsFillBagFill size={20} color="gray" />
+      <div
+        className={`${
+          pathname === "/shop"
+            ? "w-4 h-4 top-2 right-2 sm:w-6 sm:h-6"
+            : "w-10 h-10 top-4 right-4"
+        } absolute flex items-center justify-center transition duration-200 ease-in-out bg-white rounded-full opacity-0 group-hover:opacity-100 `}
+      >
+        <BsFillBagFill color="gray" className="text-[8px] sm:text-[12px]" />
       </div>
     </div>
   );

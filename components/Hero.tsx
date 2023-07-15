@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import CustomButton from "./CustomButton";
 
 const Hero = () => {
   return (
@@ -12,11 +11,12 @@ const Hero = () => {
         <h1 className="text-[36px] md:text-[40px] lg:text-[50px]">
           Bringing Nature to Urban Dwellers
         </h1>
-        <CustomButton
-          title="Shop Now"
-          containerStyles="bg-white xs:py-2 py-4 px-8 text-black"
-          textStyles="font-medium text-[18px]"
-        />
+        <Link
+          href="/shop"
+          className="bg-white xs:py-2 py-4 px-8 text-black font-medium text-[18px]"
+        >
+          Shop Now
+        </Link>
       </div>
     </div>
   );
