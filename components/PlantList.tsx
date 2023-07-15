@@ -24,7 +24,7 @@ const PlantList = ({ filteredPlants }: PlantListProps) => {
       >
         <h1 className="xs:text-[34px] sm:text-[40px]">New Plants</h1>
       </div>
-      <div className="grid grid-cols-3 mt-10  gap-y-10 gap-x-4 mx-auto">
+      <div className="grid grid-cols-3 mt-10 gap-y-10 gap-x-4 lg:gap-x-6 xl:gap-x-0">
         {filteredPlants?.map((plant) => (
           <PlantCard key={plant.id} plant={plant} />
         ))}

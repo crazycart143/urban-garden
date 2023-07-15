@@ -15,7 +15,9 @@ const PlantCard = ({ plant }: PlantCardProps) => {
   return (
     <div
       className={`${
-        pathname === "/shop" ? "w-[24vw] sm:w-[26.5vw] md:w-[26vw]" : ""
+        pathname === "/shop"
+          ? "w-[24vw] sm:w-[26.5vw] md:w-[26vw] lg:w-[22vw] xl:w-[18vw]"
+          : ""
       } relative flex flex-col cursor-pointer group`}
     >
       <Image
@@ -25,7 +27,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
         alt={name}
         className={`${
           pathname === "/shop"
-            ? "w-[24vw] sm:w-[26.5vw] md:w-[26vw] lg:w-[20vw]"
+            ? "w-[24vw] sm:w-[26.5vw] md:w-[26vw] lg:w-[22vw] xl:w-[18vw]"
             : "w-[36vw] sm:w-[28vw] lg:w-[24vw] xl:w-[340px]"
         } object-contain  `}
       />
@@ -33,7 +35,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
       <h1
         className={`${
           pathname === "/shop"
-            ? "text-[2vw] sm:text-[2.5vw] lg:text-[2vw] "
+            ? "text-[2vw] sm:text-[2.5vw] lg:text-[2vw] xl:text-[1.7vw] "
             : "xs:text-[4vw] sm:text-[2vw] lg:text-[26px] "
         }text-[#141A0F] break-words `}
       >
@@ -42,7 +44,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
       <p
         className={`${
           pathname === "/shop"
-            ? "xs:text-[2.2vw] sm:text-[2vw] lg:text-[1.5vw]"
+            ? "xs:text-[2.2vw] sm:text-[2vw] lg:text-[1.5vw] xl:text-[1.2vw]"
             : "xs:text-[4vw] sm:text-[2vw] lg:text-[20px]"
         } text-gray-400`}
       >
@@ -51,7 +53,7 @@ const PlantCard = ({ plant }: PlantCardProps) => {
       <p
         className={`${
           pathname === "/shop"
-            ? "text-[2.5vw] lg:text-[2vw]"
+            ? "text-[2.5vw] lg:text-[2vw] xl:text-[1.5vw]"
             : "xs:text-[4vw] sm:text-[2vw] lg:text-[22px]"
         } font-medium  text-[#4D4F59] tracking-wider `}
       >
