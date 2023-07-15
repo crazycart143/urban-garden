@@ -70,6 +70,50 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+      <div
+        className={`${
+          isOpen ? "translate-x-[0%]" : "translate-x-[100%]"
+        } w-full block flex-grow bg-white h-[100vh] z-50 fixed top-0 left-0 py-[50px] lg:hidden transition-all`}
+      >
+        <div className="flex items-end justify-end mr-[50px]">
+          <HamburgerMenu setIsOpen={setIsOpen} isOpen={isOpen} />
+        </div>
+        <div className="flex flex-col text-[#5C9735] mt-[50px] w-full">
+          <div className="pl-[50px] hover:bg-gray-100 py-4 cursor-pointer">
+            <h1 className="text-[24px] font-bold text-[#5C9735] tracking-wider  ">
+              Urban Garden
+            </h1>
+          </div>
+          <Link
+            className="py-[10px] text-[18px] pl-[50px] hover:bg-gray-100"
+            href="/"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            Home
+          </Link>
+          <a
+            className="py-[10px] hover:bg-gray-100 text-[18px] pl-[50px]"
+            href="#skills"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            Plants
+          </a>
+          <a
+            className="py-[10px] hover:bg-gray-100 text-[18px] pl-[50px]"
+            href="#projects"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            About
+          </a>
+          <a
+            className="py-[10px] hover:bg-gray-100 text-[18px] pl-[50px]"
+            href="#contact"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            Contacts
+          </a>
+        </div>
+      </div>
     </nav>
   );
 };
